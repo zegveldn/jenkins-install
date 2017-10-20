@@ -1,0 +1,12 @@
+- hosts: localhost
+  roles:
+    - jenkins
+  tags: jenkins
+
+# If rpm_key install fails try the following command on the target server
+# sudo rpm --import "https://jenkins-ci.org/redhat/jenkins-ci.org.key"
+#
+# rm -f /var/lib/rpm/__db*
+# rpm __rebuilddb
+# yum clean all
+# yum update
